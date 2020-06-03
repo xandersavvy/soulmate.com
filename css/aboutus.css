@@ -1,0 +1,85 @@
+body{
+	background: linear-gradient(-90deg,#45ff89,#ffffff);
+	text-shadow: black;
+}
+header{
+	background: transparent;
+	max-height: 150px;
+	min-height: 100px;
+	width: auto;
+}
+nav{
+	width: auto;
+	max-height:100px;
+	min-height:80px;
+	padding: 4px; 
+}
+article{
+	padding-top: 100px;
+	text-align: center;
+	padding-right: 50px;
+	padding-left: 50px;
+	margin:40px 20px 200px 20px; 
+}
+article a:hover{
+	transition-duration: 2s;
+	color: red; 
+}
+p{
+	font-size: 30px;
+	font-weight: bolder;
+	text-decoration: underline;
+}
+#logo{
+	margin-right: 5%;
+	float: left;
+	font-weight: bolder;
+	font-size: 45px;
+}
+#contact{
+	text-shadow: inherit;
+	float: right;
+	font-variant-caps: small-caps;
+	color: black;
+	font-weight: bolder;
+}
+nav ul{
+	float: left;
+	padding: 30px; 
+	margin: 20px;
+	font-weight: lighter;
+}
+nav ul a{
+	text-decoration: none;
+}
+nav ul a:hover{
+	transition: 2s;
+	text-decoration: underline;
+	list-style-type: square;
+}
+footer{
+	background: black;
+	color: white;
+	width: auto;
+	bottom: 0;
+	height: 400px;
+	left: 0;
+	right:0;
+}
+#abot{
+	background: inherit;
+	float: left;
+	width: 600px;
+	height: inherit;
+	margin-left: 3%;	
+	text-align: left;
+}
+#links{
+	background: inherit;
+	height: inherit;
+	text-align: right;
+	list-style-type: somali;
+	margin-right: 3%;
+	float: right;
+	width: auto;
+}
