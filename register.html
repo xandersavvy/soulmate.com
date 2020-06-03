@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		function validate()
+			{
+
+				if (document.myForm.gender.value=="-1") {
+					alert("Please Provide Your Gender");
+					return false;
+				}
+				if (document.myForm.DOB.value=="") {
+					document.myForm.DOB.focus();
+					alert("Please Provide Your Date of Birth");
+					return false;
+				}
+				if (document.myForm.Nation.value=="-1") {
+					document.myForm.Nation.focus();
+					alert("Please Provide Your Nationality");
+					return false;
+				}
+				if (document.myForm.pin.value!=6) {
+					document.myForm.pin.focus();
+					alert("Please Enter Your 6 Digit Postal Code");
+					return false;
+				}
+				if (document.myForm.phone.value!=12) {
+					document.myForm.phone.focus();
+					alert("Please Enter Your 12 Digit mobile number (with 2 digit country Code)");
+					return false;
+				}
+			if (document.myForm.course_type.value=="-1") {
+					document.myForm.course_type.focus();
+					alert("Please Provide the Type of Course");
+					return false;
+				}
+			if (document.myForm.course_name.value=="-1") {
+					document.myForm.course_name.focus();
+					alert("Please Provide The Name of The Course");
+					return false;
+				}
+			return(true);
+			}
+	</script>
+	<title>
+		Register
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+</head>
+<body>
+	<header>
+		<div id="logo">
+			SOULMATE.COM
+		</div>
+		<div id="contact">
+			contact us:<br>
+			<a href="Tel:+911234567890">+91 1234 567 890</a><br>
+			<a href="mailto:someone@mail.com" target="">someone@mail.com</a>
+		</div>
+	</header>
+	<nav>
+			<ul><a href="home.html">Home</a></ul>
+			<ul><a href="gallery.html">Gallery</a></ul>
+			<ul><a href="register.html">Register</a></ul>
+			<ul><a href="aboutus.html">About us</a></ul>
+	</nav>	
+	<form name="myForm" onsubmit="return(validate())">
+	<article id="basic_info">
+	<div id="stu_name">
+		<label for="stud_name">Name</label><BR>
+		<input type="name" placeholder="Enter Your Name"name="stud_name" required>
+	</div>
+	<div id="guard_name">
+		<label for="guard_name">Guardian Name</label><BR>
+		<input type="" placeholder="Enter Your Guardian's Name" name="" required>
+	</div>
+	<div id="gender">
+		<label for="gender">Gender</label><BR>
+		<select name="gender">
+			<option value="-1" selected>Choose your gender</option>
+			<option value="1">Male</option>
+			<option value="2">Female</option>
+			<option value="3">Other</option>
+		</select>
+	</div>
+	<div id="DOB">
+		<label>Date of Birth</label><BR>
+		<input type="date" name="DOB" required>
+	</div>
+	</article>
+	<article id="candidate_address">
+		<div id="Nation">
+			<label for="Nation">Nationality</label><BR>
+			<select name="Nation">
+					<option value="-1" selected>Choose your nationality</option>
+					<option value="1">Indian</option>
+					<option value="2">Not an Indian</option>
+			</select>
+		</div>
+		<div id="State">
+			<label for="State">State</label><BR>
+			<input type="" placeholder="Enter Your State Name" name="State" required>
+		</div>
+		<div id="District">
+			<label for="District">District</label><BR>
+			<input type="" placeholder="Enter Your District Name" name="District" required>
+		</div>
+		<div id="town">
+			<label for="town">City/Village</label><BR>
+			<input type="text" placeholder="Enter Your City/Village Name" name="town" required>
+		</div>
+		<div id="pin">
+			<label for="pin">Pin<BR></label>
+			<input type="number" placeholder="Enter Your Pin NO." name="pin" size="6" required>
+		</div>
+	</article>
+	<article id="contact details">
+		<div id="phone">
+			<label for="phone">Mobile number</label><BR>
+			<input type="number" placeholder="Enter Your Mobile Number" name="phone" size="10" required>
+		</div>
+		<div>
+			<label for="email">Email Address</label><BR>
+			<input type="email" name="email" placeholder="Enter Your Email Address" required>
+		</div>
+	</article>
+	<article id="course">
+		<div>
+			<label for="course_type">Choose Your Religion</label><BR>
+			<select name="course_type">
+					<option value="-1" selected>Choose Religon</option>
+					<option value="1">HINDUISM</option>
+					<option value="2">CHRISTIANITY</option>
+					<option value="3">ISLAM</option>
+					<option value="4">ATHEISM</option>
+			</select>
+		</div>
+		<div>
+			<label for="course_name">Choose Your Partner's Preferred Religion</label><BR>
+				<select name="course_name">
+					<option value="-1" selecteds>Choose Partner's Religion</option>
+					<option value="1">HINDUISM</option>
+					<option value="2">CHRISTIANITY</option>
+					<option value="3">ISLAM</option>
+					<option value="4">ATHEISM</option>
+					<option value="5">DOESN'T MATTER</option>
+				</select>
+		</div>
+	</article>
+	<article id="submit">
+		<button type="submit" onclick="" class="btn">Continue to Payment</button>
+	</article>
+</form>
+	<footer>
+			<div id="abot">
+				<h1>SoulMate.com</h1>
+				We are a leading Indian matrimonial matchmaking service provider. Our experienced and highly dedicated team is committed to provide 360 degree solutions to all prospective Indian brides and grooms. We have a long list of Happy Customers, who are pleased with our end-to-end services. 
+			</div>
+			<div id="links">
+				<br><a href="home.html">Home</a><br>
+				<br><a href="gallery.html">Gallery</a><br>
+				<br><a href="register.html">Register</a><br>
+				<br><a href="aboutus.html">About us</a><br>	
+			</div>	
+	</footer>
+</body>
+</html>
